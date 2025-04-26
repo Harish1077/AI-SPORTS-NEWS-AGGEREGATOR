@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportsPulse - Latest Sports News</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-bolt"></i>
+        <h1>SportsPulse</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Top Stories</a></li>
+        <li><a href="#">Live Scores</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your Source for Breaking Sports News</h1>
+      <p>Stay updated with the latest headlines, scores, and stories from the world of sports</p>
+    </div>
+  </section>
+
+  <!-- Category Filter -->
+  <section class="category-filter">
+    <h2>Filter by Sport</h2>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-category="all">All Sports</button>
+      <button class="filter-btn" data-category="football">Football</button>
+      <button class="filter-btn" data-category="basketball">Basketball</button>
+      <button class="filter-btn" data-category="tennis">Tennis</button>
+      <button class="filter-btn" data-category="cricket">Cricket</button>
+      <button class="filter-btn" data-category="formula1">Formula 1</button>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="news-section">
+    <h2>Latest Sports News</h2>
+    <div class="news-container" id="news-container">
+      <!-- Skeleton loaders will be replaced with actual news -->
+      <div class="news-card skeleton">
+        <div class="news-img skeleton-img"></div>
+        <div class="news-content">
+          <div class="skeleton-title"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+        </div>
+      </div>
+      <div class="news-card skeleton">
+        <div class="news-img skeleton-img"></div>
+        <div class="news-content">
+          <div class="skeleton-title"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+        </div>
+      </div>
+      <div class="news-card skeleton">
+        <div class="news-img skeleton-img"></div>
+        <div class="news-content">
+          <div class="skeleton-title"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+        </div>
+      </div>
+      <div class="news-card skeleton">
+        <div class="news-img skeleton-img"></div>
+        <div class="news-content">
+          <div class="skeleton-title"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+        </div>
+      </div>
+      <div class="news-card skeleton">
+        <div class="news-img skeleton-img"></div>
+        <div class="news-content">
+          <div class="skeleton-title"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+        </div>
+      </div>
+      <div class="news-card skeleton">
+        <div class="news-img skeleton-img"></div>
+        <div class="news-content">
+          <div class="skeleton-title"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+        </div>
+      </div>
+    </div>
+    <div class="error-container" id="error-container">
+      <i class="fas fa-exclamation-circle"></i>
+      <h3>Oops! Something went wrong</h3>
+      <p>We couldn't load the latest sports news. Please try again later.</p>
+      <button id="retry-btn">Try Again</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-bolt"></i>
+        <h2>SportsPulse</h2>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Top Stories</a></li>
+            <li><a href="#">Live Scores</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Sports</h3>
+          <ul>
+            <li><a href="#">Football</a></li>
+            <li><a href="#">Basketball</a></li>
+            <li><a href="#">Tennis</a></li>
+            <li><a href="#">Cricket</a></li>
+            <li><a href="#">Formula 1</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Connect</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 SportsPulse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Chatbot -->
+  <div class="chatbot-container">
+    <div class="chatbot-button" id="chatbot-button">
+      <i class="fas fa-comment"></i>
+    </div>
+    <div class="chatbot-box" id="chatbot-box">
+      <div class="chatbot-header">
+        <h3><i class="fas fa-robot"></i> Sports Assistant</h3>
+        <button id="close-chatbot"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages">
+        <div class="message bot-message">
+          <p>Hi there! I'm your sports assistant powered by Gemini AI. Ask me anything about sports!</p>
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input type="text" id="user-input" placeholder="Ask about sports...">
+        <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
